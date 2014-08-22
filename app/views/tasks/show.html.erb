@@ -4,6 +4,10 @@
 <p>Status: <%= @task.status %></p>
 
 <p><a href="/tasks/<%= @task.id %>/edit">Edit</a></p>
+<p><a href="/tasks/<%= @task.id %>"
+      data-confirm="You sure?"
+      data-method="delete"
+      rel="nofollow">Delete</a></p>
 <p><a href="/tasks">Return to Tasks listing</a></p>
 
 
